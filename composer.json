@@ -6,5 +6,7 @@
             "email": "dhk22500@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "phpmailer/phpmailer": "^6.6"
+    }
 }
