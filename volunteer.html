@@ -261,26 +261,26 @@
 						<div class="row">
 							<div class="col-12">
 								<!-- user form start-->
-								<form class="form user-form" action="javascript:void(0);">
+								<form class="form user-form" action="mail/volunteermail.php" method="post">
 									<p>All the fields are required *</p>
 									<div class="row">
 											<div class="col-lg-6">
-												<input class="form__field" type="text" name="first-name" placeholder="First Name" required/>
-												<input class="form__field" type="text" name="last-name" placeholder="Last Name" required/>
-												<select class="form__field" name="Gender" id="gender" required>
+												<input class="form__field" type="text" name="first_name" placeholder="First Name" required/>
+												<input class="form__field" type="text" name="last_name" placeholder="Last Name" required/>
+												<select class="form__field" name="gender" id="gender" required>
 													<option class="form__field" value="" disabled selected hidden>Gender</option>
 													<option value="Male">Male</option>
 													<option value="Femlae">Female</option>
 												</select>
 												<input class="form__field" type="email" name="email" placeholder="E-mail" required/>
 												<input class="form__field" type="text" name="hours" placeholder="How many hours you can dedicate?" required/>
-												<input class="form__field" type="tel" name="phone-number" placeholder="Phone Number" required/>
-												<input class="form__field " placeholder="Date of Birth" onfocus="this.placeholder='dd-mm-yyyy'" type="number" name="date-of-birth" onblur="this.placeholder='Date of Birth'" required/>
+												<input class="form__field" type="tel" name="phone" placeholder="Phone Number" required/>
+												<input class="form__field " placeholder="Date of Birth" onfocus="this.placeholder='dd-mm-yyyy'" type="date" name="date_of_birth" onblur="this.placeholder='Date of Birth'" required/>
 												<input class="form__field" type="text" name="address" placeholder="Address" required/>
 												</div>
 											<div class="col-lg-6">
 												<textarea class="form__field form__message" name="humanity" placeholder="What do you think about humanity?" required></textarea>
-												<label for="cate">INTERSTED CATEGORIES:</label>
+												<label for="cate">INTRESTED CATEGORIES:</label>
 												<select class="form__field" name="cate" id="cate" oninput="writer()">
 													<option class="form__field" value="" disabled selected hidden>Select at least 3 categories</option>
 													<option value="Social work">Social work</option>
@@ -339,7 +339,7 @@
 									</div>
 									<div class="row">
 										<div class="col-12">
-											<button class="form__submit" type="submit" >Submit</button>
+											<button class="form__submit" type="submit" name="subb">Submit</button>
 										</div>
 									</div>
 									
